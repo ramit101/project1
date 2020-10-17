@@ -1,6 +1,7 @@
 package test_scripts;
 
 import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import generic.Base_Class;
@@ -11,8 +12,9 @@ import pom.LoginPage;
 import pom.ProductsPage;
 
 public class login_logout  extends Base_Class{
-@Test
+@Test(invocationCount=0)
 public void tc1(){
+
 	LoginPage lgn = new LoginPage(driver);
 	lgn.setusername();
 	lgn.setPassword();
@@ -33,5 +35,8 @@ public void tc1(){
 
 }
 
-
+@Test()
+public void takeScreenShot(){
+	Reporter.log("hello now in @test",true);
+}
 }
