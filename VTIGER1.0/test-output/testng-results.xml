@@ -1,127 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[this is before method]]>
-    </line>
-    <line>
-      <![CDATA[this is before method]]>
-    </line>
-    <line>
-      <![CDATA[this is second test case]]>
-    </line>
-    <line>
-      <![CDATA[status=1 so test case is passed]]>
-    </line>
-    <line>
-      <![CDATA[this is After Class]]>
+      <![CDATA[**********************************]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="106301" started-at="2020-10-17T20:27:10Z" finished-at="2020-10-17T20:28:56Z">
+  <suite name="Default suite" duration-ms="1100" started-at="2020-10-24T19:24:33Z" finished-at="2020-10-24T19:24:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="106301" started-at="2020-10-17T20:27:10Z" finished-at="2020-10-17T20:28:56Z">
-      <class name="test_scripts.Failed_Screenshot">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:test_scripts.Failed_Screenshot@3a82f6ef]" name="openBrowser" is-config="true" duration-ms="28471" started-at="2020-10-18T01:57:10Z" finished-at="2020-10-18T01:57:38Z">
+    <test name="Default test" duration-ms="1100" started-at="2020-10-24T19:24:33Z" finished-at="2020-10-24T19:24:34Z">
+      <class name="parallel.Object">
+        <test-method status="PASS" signature="objectmethods()[pri:0, instance:parallel.Object@7c0e2abd]" name="objectmethods" duration-ms="109" started-at="2020-10-25T00:54:34Z" finished-at="2020-10-25T00:54:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="m1()[pri:0, instance:test_scripts.Failed_Screenshot@3a82f6ef]" name="m1" is-config="true" duration-ms="4" started-at="2020-10-18T01:57:38Z" finished-at="2020-10-18T01:57:38Z">
+        </test-method> <!-- objectmethods -->
+        <test-method status="PASS" signature="tc_02()[pri:0, instance:parallel.Object@7c0e2abd]" name="tc_02" duration-ms="25" started-at="2020-10-25T00:54:34Z" finished-at="2020-10-25T00:54:34Z">
           <reporter-output>
-            <line>
-              <![CDATA[this is before method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m1 -->
-        <test-method status="FAIL" signature="loginAppln()[pri:0, instance:test_scripts.Failed_Screenshot@3a82f6ef]" name="loginAppln" duration-ms="52210" started-at="2020-10-18T01:57:38Z" finished-at="2020-10-18T01:58:31Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-	this test case is fail but still login will happen]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-	this test case is fail but still login will happen
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at test_scripts.Failed_Screenshot.loginAppln(Failed_Screenshot.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAppln -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:test_scripts.Failed_Screenshot@3a82f6ef]" name="closeApplication" is-config="true" duration-ms="25208" started-at="2020-10-18T01:58:31Z" finished-at="2020-10-18T01:58:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginAppln status=FAILURE method=Failed_Screenshot.loginAppln()[pri:0, instance:test_scripts.Failed_Screenshot@3a82f6ef] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="m1()[pri:0, instance:test_scripts.Failed_Screenshot@3a82f6ef]" name="m1" is-config="true" duration-ms="3" started-at="2020-10-18T01:58:56Z" finished-at="2020-10-18T01:58:56Z">
-          <reporter-output>
-            <line>
-              <![CDATA[this is before method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m1 -->
-        <test-method status="PASS" signature="tc_02()[pri:0, instance:test_scripts.Failed_Screenshot@3a82f6ef]" name="tc_02" duration-ms="11" started-at="2020-10-18T01:58:56Z" finished-at="2020-10-18T01:58:56Z">
-          <reporter-output>
-            <line>
-              <![CDATA[this is second test case]]>
-            </line>
           </reporter-output>
         </test-method> <!-- tc_02 -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:test_scripts.Failed_Screenshot@3a82f6ef]" name="closeApplication" is-config="true" duration-ms="137" started-at="2020-10-18T01:58:56Z" finished-at="2020-10-18T01:58:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc_02 status=SUCCESS method=Failed_Screenshot.tc_02()[pri:0, instance:test_scripts.Failed_Screenshot@3a82f6ef] output=this is second test case]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="tc_03()[pri:0, instance:parallel.Object@7c0e2abd]" name="tc_03" duration-ms="30" started-at="2020-10-25T00:54:34Z" finished-at="2020-10-25T00:54:34Z">
           <reporter-output>
             <line>
-              <![CDATA[status=1 so test case is passed]]>
+              <![CDATA[**********************************]]>
             </line>
           </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test_scripts.Failed_Screenshot@3a82f6ef]" name="closeBrowser" is-config="true" duration-ms="2" started-at="2020-10-18T01:58:56Z" finished-at="2020-10-18T01:58:56Z">
-          <reporter-output>
-            <line>
-              <![CDATA[this is After Class]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- test_scripts.Failed_Screenshot -->
+        </test-method> <!-- tc_03 -->
+      </class> <!-- parallel.Object -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -31,36 +31,19 @@ driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 //driver.manage().window().maximize();
 driver.get("http://localhost:8888/");
 }
-/*@BeforeMethod
-
-public void openApplication() throws FileNotFoundException, IOException{
-	generic_Properties ty = new generic_Properties( );
-	String url = ty.fewData("url");
-	driver.get(url);
-	
-	 reports = new ExtentReports("./reports/extntrprt.html",false);
-	 test = reports.startTest("smoke testing");
-		test.log(LogStatus.FAIL, "test case is failed");	
-		*/
-		
 @BeforeMethod
 public void m1(){
-	System.out.println("*****************************");
-	Reporter.log("this is before method",true);
+	System.out.println("******************************");
 }
+
 @AfterMethod
-public void closeApplication(ITestResult result) throws IOException{
-	int status = result.getStatus();
-	if(status==2){
-		  Takescreenshot.screenshot(driver);
-		
-	}
-	else{
-		Reporter.log("status=1 so test case is passed",true);
-	}
+public void m2(){
+	System.out.println("******************************");
 }
+
 @AfterClass
 public void closeBrowser(){
-	Reporter.log("this is After Class",true);
+	Reporter.log("browser closed",true);
 }
+
 }

@@ -18,6 +18,12 @@ public WebElement search;                         //storing
 @FindBy(id="bas_searchfield")
 public WebElement in;
 
+@FindBy(xpath="//input[@name='search_text']") //finding the searchfor text field
+private WebElement searchfor;
+
+@FindBy(name="submit")
+private WebElement searchNow;
+
 public ProductsPage(WebDriver driver){        //object creation and initilization
 	PageFactory.initElements(driver,this);
 }
@@ -37,4 +43,17 @@ public void searchIN(){
 	System.out.println(ss);
 	    } 
 	}
+public void searchby(){
+	searchfor.sendKeys("Vtiger 5 Users Pack");
+}
+public void search_productName(){
+	Select sel = new Select(in);
+	sel.selectByVisibleText("Product Name");
+	
+	}
+public void click_searchnow(){
+	searchNow.click();
+}
+
+
 }
